@@ -2,28 +2,141 @@
 <html lang="ru" class="no-js">
 <head>
   @@include('_include/page-head.html')
-  <title>Document</title>
+  <title>Монгольфъеркин</title>
 </head>
 <body>
-  <!-- Это включение в разметку SVG-спрайта и пример его использования -->
-  <!-- @@include('img/sprite-svg.svg') -->
-  <!-- <svg width="24" height="24"><use xlink:href="#loupe"></use></svg> -->
-  <!-- <svg width="24" height="24"><use xlink:href="#rgb"></use></svg> -->
-  <!-- <svg width="24" height="24"><use xlink:href="#tea-cup"></use></svg> -->
+ <div class="header">
+   <div class="header__inner">
 
+     <div class="header-logo">
+       
+     </div>
+           
+    <div class="nav-burger">
+      <input type="checkbox" id="hmt" class="hidden-menu-ticker">
+      <label class="btn-menu" for="hmt">
+        <span class="first"></span>
+        <span class="second"></span>
+        <span class="third"></span>
+      </label>
 
-  <!-- Это примеры использования растрового спрайта -->
-  
-  <div class="chrome"></div>
-  <div class="github-logo"></div>
-  <div class="kraken"></div>
-  <div class="male-and-female"></div>
-  <div class="musica-searcher"></div>
-  <div class="placeholder"></div>
-  
+      <ul class="hidden-menu">
+        <li class="main-nav__item--burger"><a href="#who" class="main-nav__link">Кто мы</a></li>
+        <li class="main-nav__item--burger"><a href="#foto" class="main-nav__link">Фотографии</a></li>
+        <li class="main-nav__item--burger"><a href="#plan-flight" class="main-nav__link">План полета</a></li>
+        <li class="main-nav__item--burger"><a href="#order" class="main-nav__link">Заказать</a></li>
+        <li class="main-nav__item--burger"><a href="#team" class="main-nav__link">Команда</a></li>
+        <li class="main-nav__item--burger"><a href="#contacts" class="main-nav__link">Контакты</a></li>
+      </ul>
+    </div>
 
-  <h1>Header</h1>
-  <p>text</p>
+    <nav class="main-nav">
+      <ul class="main-nav__list">
+        <li class="main-nav__item"><a href="#who" class="main-nav__link main-nav__link--active">Кто мы</a></li>
+        <li class="main-nav__item"><a href="#foto" class="main-nav__link">Фотографии</a></li>
+        <li class="main-nav__item"><a href="#plan-flight" class="main-nav__link">План полета</a></li>
+        <li class="main-nav__item"><a href="#order" class="main-nav__link">Заказать</a></li>
+        <li class="main-nav__item"><a href="#team" class="main-nav__link">Команда</a></li>
+        <li class="main-nav__item"><a href="#contacts" class="main-nav__link">Контакты</a></li>
+      </ul>
+    </nav>
+   </div>
+ </div>
+
+  <main>
+
+    <div class="promo" id="who">
+      <div class="promo__inner">
+        <div class="promo__title">
+          <p class="promo__title--text">Организация полетов на воздушных шарах</p>
+        </div>
+        
+        <span class="promo__description">Увлекательная экскурсия</span>
+        <span class="promo__description">Удивительный опыт</span>
+        <span class="promo__description">Романтическая прогулка</span>
+        <span class="promo__description">Запоминающийся подарок</span>
+        
+        <div class="promo__btn">
+          <a href="#" class="promo__btn--more">Подробнее</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="advantages">
+      <div class="advantages__inner">
+        <p class="advantages__item advantages__item--ball">Современный надежный шар</p>
+        <p class="advantages__item advantages__item--piloting">Обучение пилотированию</p>
+        <p class="advantages__item advantages__item--photography">Фотосъемка в полете</p>
+        <p class="advantages__item advantages__item--view">Потрясающие виды</p>
+      </div>
+    </div>
+
+    <section class="info">
+      <div class="info__inner">
+        <div class="info__fact">
+          <p class="info__fact--text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit quas error, officia expedita eius odit alias similique ab laudantium. Ex.</p>
+        </div>
+        <div class="info__media">
+          VIDEO
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery" id="foto">
+      <div class="gallery__inner">
+        
+      </div>
+    </section>
+
+    <setion class="about-flight" id="plan-flight">
+      <div class="about-flight__inner">
+        
+      </div>
+    </setion>
+
+    <section class="cost" id="order">
+      <div class="cost__inner">
+        
+      </div>
+    </section>
+
+    <section class="faq-pay">
+      <div class="faq-pay__inner">
+        
+      </div>
+    </section>
+
+    <section class="flight-fact">
+      <div class="flight-fact__inner">
+        
+      </div>
+    </section>
+    
+    <section class="instructor" id="team">
+      <div class="instructor__inner">
+        
+      </div>
+    </section>
+    
+    <section class="reviews">
+      <div class="reviews__inner">
+        
+      </div>
+    </section>
+
+    <section class="contacts" id="contacts">
+      <div class="contacts__inner">
+        
+      </div>
+    </section>
+
+  </main>
+
+ <div class="footer">
+   <div class="footer__inner">
+     
+   </div>
+ </div>
 
 </body>
 </html>
