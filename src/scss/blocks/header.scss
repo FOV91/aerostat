@@ -2,6 +2,8 @@
 	background-color: #2c2c2c;
 
 	@media (min-width: $screen-xs){
+		
+
 		.header__inner{
 			width: 100%;
 
@@ -38,12 +40,14 @@
 		margin: 0 auto;
 		position: relative;
 
+
 		.header-logo{
 			.header-logo-text{
 				margin: 0;
 				padding-top: 16px;
 				padding-bottom: 16px;
 				padding-left: 3%;
+				font-family: 'FiraSans-Medium', sans-serif;
 			}
 		}
 		
@@ -54,20 +58,11 @@
 			}
 			.btn-menu{
 				position: absolute;
-				z-index: 111;
 				top: 7px;
-				left: 60%;
+				right: 5%;
 			}
 
-			.btn-menu span{
-				width: 30px;
-				height: 2px;
-				background-color: #fff;
-				display: block;
-				margin: 8px;
-				transition: all .1s linear .23s;
-			  position: relative;
-			}
+
 
 			.hidden-menu{
 				position: absolute;
@@ -75,37 +70,130 @@
 				margin: 0 auto;
 				list-style: none;
 				padding-left: 0;
-				top:60px; 
-				right: -20px;
-			}
-			
+				top:-400px; 
+				right: 4%;
+				z-index: 111111111;
+				transition: all .3s linear .4s;
+				padding: 10px;
+				padding-right: 20px;
+				border-radius: 2%;
+				opacity: 0.8;
 
-			/*.hidden-menu-ticker:checked ~ .btn-menu {
-			  -webkit-transform: rotate(90deg);
-			  -ms-transform: rotate(90deg);
-			  -o-transform: rotate(90deg);
-			  transform: rotate(90deg);
-			}*/
-			
+				.main-nav__item--burger{
+					padding-bottom: 10px;
+
+					.main-nav__link{
+						color: #fff;
+						font-family: 'FiraSans-Medium', sans-serif;
+					}
+				}
+			}
+
+			.menu {
+			  width: 3em;
+			  height: 3em;
+			  position: relative;
+			  z-index: 0;
+			  
+			}
+			.menu .bit-1::before {
+			  content: '';
+			  left: 0.5em;
+			  top: 0.5em;
+			  position: absolute;
+			  width: 1em;
+			  transform-origin: left bottom;
+			  height: 0.2em;
+			  background: #fff;
+			  transition: transform 0.2s, top 0.2s;
+			}
+			.menu .bit-1::after {
+			  content: '';
+			  position: absolute;
+			  right: 0.5em;
+			  top: 0.5em;
+			  width: 1em;
+			  transform-origin: right bottom;
+			  height: 0.2em;
+			  background: #fff;
+			  transition: transform 0.2s, top 0.2s;
+			}
+			.menu .bit-2 {
+			  position: absolute;
+			  width: 2em;
+			  top: 40%;
+			  left: 50%;
+			  height: 0.2em;
+			  background: #fff;
+			  transform: translate(-50%, -50%);
+			  transition: transform 0.2s 0.2s, width 0.2s 0.6s;
+			}
+			.menu .bit-3::before {
+			  content: '';
+			  position: absolute;
+			  bottom: 1.2em;
+			  left: 0.5em;
+			  width: 1em;
+			  transform-origin: left top;
+			  height: 0.2em;
+			  background: #fff;
+			  transition: transform 0.2s, bottom 0.2s;
+			}
+			.menu .bit-3::after {
+			  content: '';
+			  position: absolute;
+			  bottom: 1.2em;
+			  right: 0.5em;
+			  width: 1em;
+			  transform-origin: right top;
+			  height: 0.2em;
+			  background: #fff;
+			  transition: transform 0.2s, bottom 0.2s;
+			}
+			.menu.open .bit-1:before {
+			  top: 0.1em;
+			  width: 1.2em;
+			  transform: rotate(45deg);
+			  transform-origin: left bottom;
+			  transition: transform 0.2s 0.2s, width 0.2s 0.2s, top 0.2s 0.2s;
+			}
+			.menu.open .bit-1:after {
+			  top: 0.1em;
+			  width: 1.2em;
+			  transform: rotate(-45deg);
+			  transform-origin: right bottom;
+			  transition: transform 0.2s 0.2s, width 0.2s 0.2s, top 0.2s 0.2s;
+			}
+			.menu.open .bit-2 {
+			  width: 0.2em;
+			  transform: translate(-50%, -50%) rotate(45deg);
+			  transition: transform 0.2s 0.2s, width 0.2s;
+			}
+			.menu.open .bit-3:before {
+			  bottom: 0.8em;
+			  width: 1.2em;
+			  transform: rotate(-45deg);
+			  transform-origin: left top;
+			  transition: transform 0.2s 0.2s, width 0.2s 0.2s, bottom 0.2s 0.2s;
+			}
+			.menu.open .bit-3:after {
+			  bottom: 0.8em;
+			  width: 1.2em;
+			  transform: rotate(45deg);
+			  transform-origin: right top;
+			  transition: transform 0.2s 0.2s, width 0.2s 0.2s, bottom 0.2s 0.2s;
+			}
+
 			.hidden-menu-ticker:checked ~ .hidden-menu {
-			  right: 100px;
-			}
-			.hidden-menu-ticker:checked ~ .btn-menu span.first {
-			  -webkit-transform: rotate(45deg);
-			  top:10px;
-			}
-			.hidden-menu-ticker:checked ~ .btn-menu span.second {
-			  opacity: 0;
-			}
-			.hidden-menu-ticker:checked ~ .btn-menu span.third {
-			  -webkit-transform: rotate(-45deg);
-			  top:-10px;
+			  top:60px;
+			  right: 5%;
+			  transition: all .2s linear .3s;
 			}
 		}
+
 
 		nav.main-nav{
 
 		}
 	}
-
 }
