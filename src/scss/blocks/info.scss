@@ -25,13 +25,27 @@
 		box-sizing: border-box;
 		padding: 3%;
 		.info__fact{
+			position: relative;
 
 			.info__fact--title{
 				color: #444444;
 				font-family: 'FiraSans-Medium', sans-serif;
 				font-size: 28px;
 				margin-top: 0;
+				margin-bottom: 40px;
 			}
+			
+			.info__fact--title:after{
+				content:'';
+				display: inline-block;
+				width: 62px;
+				height: 6px;
+				background-color: #3e98d7;
+				position: absolute;
+				top: 47px;
+				left: 0;
+			}
+
 			.info__fact--text{
 				color: #444444;
 				font-family: 'FiraSans-Regular', sans-serif;
