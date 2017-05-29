@@ -1,0 +1,42 @@
+.gallery{
+
+
+
+	&__inner{
+		margin-bottom: 30px;
+		
+		.gallery__slider{
+			overflow: hidden;
+
+			.gallery__item{
+				width: 100%;
+				height: 230px;
+				object-fit: cover;
+				margin: 0;
+			}
+		}
+		.prevArrow{
+			position: absolute;
+			top: 90px;
+			left: 0;
+			padding: 20px;
+			background-color: #000;
+			opacity: 0.6;
+			z-index: 11111;
+			width: 10px;
+			height: 20px;
+		}
+		.nextArrow{
+			position: absolute;
+			top:90px;
+			right: 0;
+			padding: 20px;
+			background-color: #000;
+			opacity: 0.6;
+			z-index: 11111;
+			width: 10px;
+			height: 20px;
+		}
+
+	}
+}

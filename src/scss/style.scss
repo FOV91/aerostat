@@ -1,8 +1,13 @@
+@import 'src/css/normalize';
+@import 'src/css/slick';
+@import 'src/css/slick-theme';
+
 @import 'variables.scss';
+
 
 @import 'global.scss';
 @import 'fonts.scss';
-/*@import 'sprite.scss';*/
+@import 'sprite.scss';
 
 @import 'blocks/page-header.scss';
 
