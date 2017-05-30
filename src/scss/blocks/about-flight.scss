@@ -1,0 +1,76 @@
+.about-flight{
+	&__inner{
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 3%;
+		position: relative;
+
+		.about-flight__title{
+			font-family: 'FiraSans-Medium',sans-serif;
+			font-size: 28px;
+			color: #444444;
+			margin-bottom: 40px;
+			padding-left: 3%;
+		}
+		.about-flight__title:after{
+			content:'';
+			display: inline-block;
+			width: 62px;
+			height: 6px;
+			background-color: #3e98d7;
+			position: absolute;
+			left: 125px;
+			top: 50px;
+		}
+		.about-flight__stage{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			-moz-flex-direction: column;
+			-ms-flex-direction: column;
+			-o-flex-direction: column;
+			flex-direction: column;
+
+			.about-flight__stage-item{
+				padding: 10px;
+				padding-bottom: 20px;
+				font-family: 'FiraSans-Regular',sans-serif;
+				font-size: 22px;
+				color: #454545;
+				position: relative;
+
+				.about-flight__stage--number{
+					position: absolute;
+					font-family: 'FiraSans-Regular',sans-serif;
+					font-size: 22px;
+					color: #fff;
+					left: 24px;
+					top: 20px;
+				}
+			}
+			.about-flight__stage-item:before{
+				content:'';
+				display: inline-block;
+				width: 37px;
+				height: 54px;
+				background-image: url('../img/sprite.png');
+				background-position: 0px -136px;
+				margin-right: 4%;
+				vertical-align: middle;
+			}
+		}
+		.about-flight__timer{
+			background-image: url("../about-flight_back-320.jpg");
+			-webkit-background-size: cover;
+			background-size: cover;
+
+			.about-flight__timer--text{
+				
+			}
+		}
+	}
+}
