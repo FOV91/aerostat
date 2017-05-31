@@ -1,5 +1,6 @@
 .about-flight{
-	&__inner{
+
+	&__inner{overflow: hidden;
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
@@ -63,13 +64,59 @@
 				vertical-align: middle;
 			}
 		}
+		
+
 		.about-flight__timer{
-			background-image: url("../about-flight_back-320.jpg");
+			background-image: url("../img/about-flight_back-320.jpg");
 			-webkit-background-size: cover;
 			background-size: cover;
+			background-position: center;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+			padding-bottom: 0;
+			padding-top: 200px;
+			width: 110%;
+			margin-left: -3.1%;
 
-			.about-flight__timer--text{
+			.about-flight__timer-inner{
 				
+				-webkit-box-sizing: border-box;
+				-moz-box-sizing: border-box;
+				box-sizing: border-box;
+				padding: 40px;
+				background-color: #000;
+				opacity: 0.5;
+				width: 100%;
+				z-index: 1;
+			}
+				
+			.about-flight__timer--text{
+				margin: 0 auto; 
+				text-align: center;
+				color: #fff;
+				position: relative;
+				float: bottom;
+				bottom:-65px;
+				z-index: 2;
+			}	
+			.clockdiv{
+				position: relative;
+				float: bottom;
+				bottom:-70px;
+				z-index: 2;
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				justify-content: space-around;
+			}
+			.clockdiv div>span{
+				color: #fff;
+			}
+			.smalltext{
+				color: #fff;
 			}
 		}
 	}
