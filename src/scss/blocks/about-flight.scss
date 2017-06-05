@@ -84,7 +84,7 @@
 				-webkit-box-sizing: border-box;
 				-moz-box-sizing: border-box;
 				box-sizing: border-box;
-				padding: 40px;
+				padding: 65px;
 				background-color: #000;
 				opacity: 0.5;
 				width: 100%;
@@ -97,13 +97,15 @@
 				color: #fff;
 				position: relative;
 				float: bottom;
-				bottom:-65px;
+				bottom:-105px;
 				z-index: 2;
+				font-family: 'FiraSans-Regular', sans-serif;
+				font-size: 22px;
 			}	
 			.clockdiv{
 				position: relative;
 				float: bottom;
-				bottom:-70px;
+				bottom:-115px;
 				z-index: 2;
 				display: -webkit-flex;
 				display: -moz-flex;
@@ -111,12 +113,33 @@
 				display: -o-flex;
 				display: flex;
 				justify-content: space-around;
+				margin-right: 15px;
+			}
+			.clockdiv div{
+
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				-webkit-flex-direction: column;
+				-moz-flex-direction: column;
+				-ms-flex-direction: column;
+				-o-flex-direction: column;
+				flex-direction: column;
+				-ms-align-items: center;
+				align-items: center;
 			}
 			.clockdiv div>span{
 				color: #fff;
+				font-family: 'FiraSans-Regular', sans-serif;
+				font-size: 28px;
+
 			}
 			.smalltext{
 				color: #fff;
+				font-size: 18px;
+				font-family: 'FiraSans-Regular', sans-serif;
 			}
 		}
 	}
