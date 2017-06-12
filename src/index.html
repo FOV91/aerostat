@@ -146,19 +146,40 @@
 
     <section class="cost" id="order">
       <div class="cost__inner">
-        <div class="cost__text">
-          <div class="cost__text--title">Расчитать стоимость</div>
-          
-          <div class="cost__text--description">
-            <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, in at obcaecati modi labore voluptates quo voluptas illo ipsa sunt, adipisci incidunt numquam beatae error. Qui placeat est cupiditate itaque.</span>
-            <span>Facere dicta laboriosam ut rerum nihil, explicabo doloribus voluptates nostrum enim voluptas, cupiditate rem! Consequuntur, id, totam! Autem, doloribus, perferendis asperiores dolores enim minima alias, nesciunt nisi animi, fugiat explicabo!</span>
-            <span>Suscipit esse nulla hic tempore error ex sint dolore deleniti aperiam magnam sapiente omnis tenetur excepturi ipsum voluptatem, nihil ipsam possimus pariatur accusamus consequatur optio, doloribus deserunt! Quia eaque, at.</span>
-          </div>
-        </div>
 
-        <div class="cost__form">
+        <p class="cost-title">Расчитать стоимость</p>
           
-        </div>
+          <div class="cost__text">  
+            <div class="cost__text--description">
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, in at obcaecati modi labore voluptates quo voluptas illo ipsa sunt, adipisci incidunt numquam beatae error. Qui placeat est cupiditate itaque.</span>
+              <span>Facere dicta laboriosam ut rerum nihil, explicabo doloribus voluptates nostrum enim voluptas, cupiditate rem! Consequuntur, id, totam! Autem, doloribus, perferendis asperiores dolores enim minima alias, nesciunt nisi animi, fugiat explicabo!</span>
+              <span>Suscipit esse nulla hic tempore error ex sint dolore deleniti aperiam magnam sapiente omnis tenetur excepturi ipsum voluptatem, nihil ipsam possimus pariatur accusamus consequatur optio, doloribus deserunt! Quia eaque, at.</span>
+            </div>
+          </div>
+
+          <div class="cost-form__inner">
+            <form class="cost-form">
+              <p>Маршрут полета:</p>
+                  <select class="form-select form-input" name="way" id="">
+                    <option class="form-select-option" value=""> </option>
+                    <option class="form-select-option" value="">Парнас-Девяткино</option>
+                    <option class="form-select-option" value="">Купчино-Рыбацкое</option>
+                  </select>
+              <p>Количество человек:</p>
+                  <select class="form-select form-input" name="value" id="">
+                    <option class="form-select-option" value=""> </option>
+                    <option class="form-select-option" value="">1</option>
+                    <option class="form-select-option" value="">2</option>
+                    <option class="form-select-option" value="">3</option>
+                    <option class="form-select-option" value="">4</option>
+                  </select>
+              <p>Имя и фамилия:</p>
+                <input class="form-input" type="text">
+              <p>Телефон:</p>
+                <input class="form-input" type="text"><br>
+              <input class="form-input-btn" type="submit" value="Полетели!">
+            </form>
+          </div>
       </div>
     </section>
 
