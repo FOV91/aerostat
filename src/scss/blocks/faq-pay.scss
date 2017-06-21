@@ -4,5 +4,56 @@
 		-moz-box-sizing: border-box;
 		box-sizing: border-box;
 		padding: 3%;
+
+		.faq__inner{
+			display: none;
+		}
+
+		.pay__inner{
+			position: relative;
+
+			.pay-title{
+				font-family: 'FiraSans-Medium',sans-serif;
+				font-size: 28px;
+				color: #444444;
+				padding-bottom: 20px;
+			}
+			.pay-title:after{	
+				content:'';
+				display: inline-block;
+				width: 62px;
+				height: 6px;
+				background-color: #3e98d7;
+				position: absolute;
+				left: 0px;
+				top: 40px;
+			}
+			.pay-list{
+				padding-left: 0;
+				list-style: none;
+				.pay-list__item{
+					.pay-list__item-title{
+						font-family: 'FiraSans',sans-serif;
+						font-size: 22px;
+						color: #444444;
+						font-weight: bold;
+					}
+					.pay-list__item-description{
+						font-family: 'FiraSans-Regular',sans-serif;
+						font-size: 18px;
+						color: #444444;
+						line-height: 25px;
+
+						p:first-child{
+							margin-bottom: 0;
+						}
+						p:last-child{
+							margin-top: 0;
+						}
+					}
+				}
+			}
+
+		}
 	}
 }
