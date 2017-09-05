@@ -1,0 +1,75 @@
+.instructor {
+	&__inner {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		padding: 3%;
+		position: relative;
+
+		.instructor-title {
+			font-family: 'FiraSans-Medium',sans-serif;
+			font-size: 26px;
+			color: #444444;
+			font-weight: normal;
+			padding-bottom: 20px;
+			text-align: center;
+		}
+		.instructor-title:after{	
+			content:'';
+			display: inline-block;
+			width: 62px;
+			height: 6px;
+			background-color: #3e98d7;
+			position: absolute;
+			left: 135px;
+			top: 70px;
+		}
+				.instructor__item--foto {
+					position: absolute;
+				}
+				.instructor__item--logo {
+					display: none;
+				}
+				.instructor__item--name {
+					font-family: 'FiraSans-Medium',sans-serif;
+					font-size: 20px;
+					color: #444444;
+
+					position: absolute;
+					padding-left: 100px;
+					padding-top: 20px;
+					margin-top: 0;
+				}
+				.instructor__item--position {
+					font-family: 'FiraSans-Regular',sans-serif;
+					font-size: 16px;
+					color: #444444;
+
+					position: absolute;
+					padding-left: 100px;
+					padding-top: 30px;
+				}
+
+		.instructor__items {
+
+			.instructor__item-senior_pilot {
+				padding-bottom: 120px;
+				position: relative;
+			}
+
+			.instructor__item-junior_pilot {
+				margin-top: 20px;
+				padding-bottom: 120px;
+				position: relative;
+			}
+			.instructor__item-technician {
+				padding-bottom: 120px;
+				position: relative;
+			}
+			.instructor__item-controller {
+				padding-bottom: 120px;
+				position: relative;
+			}
+		}
+	}
+}
