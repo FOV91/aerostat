@@ -7,7 +7,10 @@ function toggleMenu () {
 menu.addEventListener('click', toggleMenu);
 
 
-
+	$('.reviews-slider').slick({
+		prevArrow: '<img class="prevArrowRev" src="img/ArrowNextRev.png" width="40px" height="48px">',
+		nextArrow: '<img class="nextArrowRev" src="img/ArrowNextRev.png" width="40px" height="48px">',
+	});
 
 	$('.gallery__slider').slick({
 		
