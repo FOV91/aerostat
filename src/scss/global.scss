@@ -8,4 +8,29 @@ body {
   	text-decoration: none;
   	color: #000;
   }
+
+  #toTop {
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;
+		text-align:center;
+		position:fixed;
+		bottom:15px; /* отступ кнопки от нижнего края страницы*/
+		right:30px;
+		cursor:pointer;
+		display:none;
+		padding: 0;
+		margin: 0;
+	}
+
+	.ToTopScroll:before{
+		content:'';
+		display: inline-block;
+		width: 32px;
+		height: 20px;
+		background-image: url('../img/sprite.png');
+		background-position: -204px -22px;
+		margin-left: 20%;
+		vertical-align: middle;
+	}
 }
