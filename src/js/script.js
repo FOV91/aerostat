@@ -5,7 +5,16 @@ function toggleMenu () {
   menu.classList.toggle('open');
 }
 menu.addEventListener('click', toggleMenu);
-
+	
+	$("a").click(function() {
+    $("html, body").animate({
+        scrollTop: $($(this).attr("href")).offset().top + "px"
+    }, {
+        duration: 1000,
+        easing: "swing"
+    });
+    return false;
+  });
 
 	$('.reviews-slider').slick({
 		prevArrow: '<img class="prevArrowRev" src="img/ArrowNextRev.png" width="40px" height="48px">',

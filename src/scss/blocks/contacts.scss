@@ -37,8 +37,17 @@
 		}
 		
 		.contacts__office {
+			padding: 3%;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+
 			.contacts__office-item {
 				.contacts__office-item-location {
+					font-family: 'FiraSans-medium',sans-serif;
+					font-size: 20px;
+					margin-top: 0;
+					margin-bottom: 0;
 				}
 				.contacts__office-item-location:before{
 					content:'';
@@ -47,30 +56,91 @@
 					height: 54px;
 					background-image: url('../img/sprite.png');
 					background-position: -41px -136px;
-					margin-right: 4%;
-					vertical-align: middle;
+					margin-right: 2%;
+					vertical-align: top;
 				}
 
 				.contacts__office-item-adress {
+					font-family: 'FiraSans',sans-serif;
+					font-size: 20px;
+					font-style: italic;
+					color: #6b6e72;
+
+					margin-left: 40px;
+					margin-top: -20px;
 				}
 				.contacts__office-item-time {
+					font-family: 'FiraSans',sans-serif;
+					font-size: 20px;
+					font-style: italic;
+					color: #6b6e72;
+
+					margin-left: 40px;
+					margin-top: -20px;
 				}
 				.contacts__office-item-tel {
+					font-family: 'FiraSans-medium',sans-serif;
+					font-size: 22px;
+					color: #6b6e72;
+
+					margin-left: 40px;
+					margin-top: -10px;
 				}
 			}
 		}
 		.contacts__office-social {
+			padding: 3%;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
+
 			.contacts__office-social--mail {
+				padding-left: 3%;
+				font-family: 'FiraSans-regular',sans-serif;
+				font-size: 22px;
+				color: #6b6e72;
+				margin-bottom: 20px;
 
 			}
-			.contacts__office-social--vk {
 
+			.contacts__office-social--mail:before{
+				content:'';
+				display: inline-block;
+				width: 23px;
+				height: 17px;
+				background-image: url('../img/sprite.png');
+				background-position: -204px -127px;
+				margin-right: 4%;
 			}
-			.contacts__office-social--fb {
+			
 
+			.contacts__office-social--vk:before {
+				content:'';
+				display: inline-block;
+				width: 22px;
+				height: 23px;
+				background-image: url('../img/sprite.png');
+				background-position: -204px -100px;
+				margin-left: 25%;
+				margin-right: 6%;
+				margin-top: 5%;
 			}
-			.contacts__office-social--inst {
-
+			.contacts__office-social--fb:before {
+				content:'';
+				display: inline-block;
+				width: 22px;
+				height: 23px;
+				background-image: url('../img/sprite.png');
+				background-position: -204px -73px;
+				margin-right: 6%;
+			}
+			.contacts__office-social--inst:before {
+				content:'';
+				display: inline-block;
+				width: 22px;
+				height: 23px;
+				background-image: url('../img/sprite.png');
+				background-position: -204px -46px;
 			}
 		}
 		.contacts__triangle-bottomright{
