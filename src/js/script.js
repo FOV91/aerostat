@@ -55,13 +55,13 @@ $('body,html').animate({scrollTop:0},800);
 		  nextArrow: '<img class="nextArrow" src="img/ArrowNext.png" width="40px" height="48px">',
 
   	 	dots: false,
-		  slidesToShow: 2,
+		  slidesToShow: 4,
 		  slidesToScroll: 1,
 		  responsive: [
 		    {
 		      breakpoint: 1280,
 		      settings: {
-		        slidesToShow: 2,
+		        slidesToShow: 1,
 		        slidesToScroll: 1,
 		        dots: true
 		      }

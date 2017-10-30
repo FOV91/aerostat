@@ -28,7 +28,13 @@
 				}
 			}
 			.info__media{
+				padding: 0;
+				margin: 0;
 				display: block;
+			
+				.info__media--video{
+					box-shadow: 0px 23px 0px -12px #e6e6e6;
+				}
 			}
 		}
 	}
