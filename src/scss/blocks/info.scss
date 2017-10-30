@@ -1,6 +1,8 @@
 .info{
 
 	@media (min-width: $screen-xs){
+		width: 100%;
+
 		&__inner{
 			.info__fact{
 
@@ -12,7 +14,23 @@
 	}
 
 	@media (min-width: $screen-sm){
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
 
+		&__inner{
+			width: 768px;
+			.info__fact{
+				.info__fact--title{
+					font-size: 32px;
+				}
+				.info__fact--text{
+				}
+			}
+			.info__media{
+				display: block;
+			}
+		}
 	}
 
 	@media (min-width: $screen-lg){
