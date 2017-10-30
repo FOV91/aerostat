@@ -1,11 +1,19 @@
 .advantages{
 	
 	@media(min-width:$screen-xs){
-		
+		width: 100%;
 	}
 
 	@media(min-width:$screen-sm){
-		
+		width: 768px;
+		&__inner{
+
+			.advantages__item{
+				display: inline-block;
+				width: 48%;
+				padding-bottom: 0;
+			}
+		}
 	}
 
 	@media(min-width:$screen-lg){
