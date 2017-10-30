@@ -33,7 +33,95 @@
 	}
 
 	@media (min-width: $screen-sm){
+		width: 768px;
+		background-image: url('../img/promo_back-768.jpg');
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-position: center;
+		
 
+		&__inner{
+			padding-top: 10%;
+			padding-bottom: 35%;
+			.promo__title{
+				position: relative;
+				
+				&--text{
+					margin-top: 100px;
+					font-size: 44px;
+					padding-left: 120px;
+					padding-right: 120px;
+
+				}
+			}
+			.promo__description{
+				position: absolute;
+				display: block;
+				font-family: 'FiraSans-Medium', sans-serif;
+				font-size: 20px;
+				color: #fff;
+			}
+			
+			.excursion{
+				top:8%;
+				left:10%;
+			}
+
+			.walk{
+				top:50%;
+				left:65%;
+			}
+
+			.experience{
+				top:67.5%;
+				left:10%;
+			}
+
+			.gift{
+				top:15%;
+				left:55%;
+			}
+
+			.promo__btn{
+				position: absolute;
+				
+				display: block;
+				font-family: 'FiraSans-Regular', sans-serif;
+				font-size: 18px;
+				
+				top:80%;
+				left:42%;
+
+				.promo__btn--more{
+					color: #fff;
+					cursor: auto;
+					padding: 8px 16px;
+					border: 1px solid #fff;
+				}		
+			}
+
+			.promo__btn--more:after{
+				position: absolute;
+				content:'';
+				display: inline-block;
+				width: 18px;
+				height: 29px;
+				background-image: url('../img/Arrow-more-768.png');
+				vertical-align: middle;
+				bottom: -60px;
+				left: 55px;
+				z-index: 111111;
+			}
+
+			.triangle-bottomleft {
+				z-index: 000000;
+				border-bottom: 60px solid #fff; 	
+			}
+			.triangle-bottomright {
+				z-index: 000000;
+				border-bottom: 60px solid #fff; 
+			}
+		}
 	}
 
 	@media (min-width: $screen-lg){
